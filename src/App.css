@@ -1,0 +1,75 @@
+/* Custom animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Aspect ratio preview boxes */
+.aspect-1-1 {
+  aspect-ratio: 1/1;
+}
+
+.aspect-16-9 {
+  aspect-ratio: 16/9;
+}
+
+.aspect-9-16 {
+  aspect-ratio: 9/16;
+}
+
+.aspect-4-3 {
+  aspect-ratio: 4/3;
+}
+
+.aspect-3-4 {
+  aspect-ratio: 3/4;
+}
+
+/* Slider customization */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  background: #4B5563;
+  border-radius: 5px;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  background: #A855F7;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  background: #A855F7;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+}
+
+.dark input[type="range"] {
+  background: #374151;
+}
+
+/* Line clamp for text truncation */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
